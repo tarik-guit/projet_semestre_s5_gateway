@@ -13,22 +13,14 @@ import org.springframework.context.annotation.Configuration;
 public class routage {
 
 
-    @Bean
-    public RouteLocator routes(RouteLocatorBuilder builder) {
-        return builder.routes()
-                .route(r -> r.path("/mlearn/**").uri("http://localhost:8002"))
-                .build();
 
 
 
-    }
-
-/*
     @Bean
     DiscoveryClientRouteDefinitionLocator dynamicroutes(ReactiveDiscoveryClient rdc, DiscoveryLocatorProperties dlp){
 
         return new DiscoveryClientRouteDefinitionLocator(rdc,dlp);
     }
 
-*/
+
 }
